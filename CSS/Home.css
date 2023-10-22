@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    background-color: #292929; 
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.logo .merci{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 5px;
+}    
+
+.banner1{
+    background: url(https://images.unsplash.com/photo-1612368764459-0446df792e36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-position-y: -250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+}
+
+.text1{
+    position: absolute;
+    top: 100px;
+    left: 55px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #292929;
+}
+
+.sub-text1{
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: #292929;
+}
+
+.own-it{
+    position: absolute;
+    top: 200px;
+    right: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.own-it .btn1{
+    border: none;
+    padding: 5px 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #292929;
+    color: #FFFFFF;
+    box-shadow: inset 0 0 0 0 azure;
+    transition: ease-out 0.7s;
+}
+
+.own-it .btn1:hover{
+    box-shadow: inset 300px 0 0 0 azure;
+    color: #292929;
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;
+}
+
+#slider figure .img1{
+    float: left;
+    width: 20%;
+    height: 580px;
+    object-fit: cover;
+    object-position: 30% 70%;
+}
+#slider figure .img2{
+    float: left;
+    width: 20%;
+    height: 580px;
+    object-fit: cover;
+    object-position: 10% 90%;
+}
+#slider figure .img3{
+    float: left;
+    width: 20%;
+    height: 580px;
+    object-fit: cover;
+    object-position: 45% 55%;
+}
+#slider figure .img4{
+    float: left;
+    width: 20%;
+    height: 580px;
+    object-fit: cover;
+    object-position: 65% 35%;
+}
+
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+
+    20%{
+        left: 0;
+    }
+
+    25%{
+        left: -100%;
+    }
+
+    45%{
+        left: -100%;
+    }
+
+    50%{
+        left: -200%;
+    }
+
+    70%{
+        left: -200%;
+    }
+
+    75%{
+        left: -300%;
+    }
+
+    95%{
+        left: -300%;
+    }
+}
+
+.t2{
+    margin-left: 150px;
+}
+
+.text2{
+    position: absolute;
+    top: 650px;
+    left: 55px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    color: #FFFFFF;
+}
+
+.text2-1{
+    position: absolute;
+    top: 680px;
+    left: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.sub-text2{
+    position: absolute;
+    top: 1023px;
+    right: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    background-color: #00000088;
+    padding: 50px;
+    padding-left: 749.5px;
+    padding-right: 70px;
+    color: #FFFFFF;
+}
+
+.sub-text2 a{
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-decoration: none;
+    background: linear-gradient(to right, #FFFFFF 50%, #292929 50%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition:  0.3s ease-out;
+}
+
+.sub-text2 a:hover{
+    background-position: -100%;
+    color: #292929;
+}
+
+.banner3{
+    position: relative;
+    top: 0;
+    left: 0;
+    background: url(https://images.unsplash.com/photo-1547570456-0e4070952418?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 15% 85%;
+    width: 100%;
+    height: 580px;
+}
+
+.text3{
+    position: absolute;
+    top: 90px;
+    left: 55px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.text3-1{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.sub-text3{
+    position: absolute;
+    top: 453px;
+    right: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    background-color: #00000088;
+    padding: 40px;
+    padding-left: 729px;
+    padding-right: 70px;
+    color: #FFFFFF;
+}
+
+.sub-text3 a{
+    color: #FFFFFF;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-decoration: none;
+    background: linear-gradient(to right, #FFFFFF 50%, #292929 50%);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition:  0.3s ease-out;
+}
+
+.sub-text3 a:hover{
+    background-position: -100%;
+    color: #292929;
+}
+
+.banner4{
+    position: relative;
+    top: 250px;
+    left: 70px;
+    background-image: url(https://images.unsplash.com/photo-1600191762849-bf8fd13e9dc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover  ;
+    width: 87.5%;
+    height: 350px;
+}
+
+.text4{
+    position: relative;
+    top: -125px;
+    left: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #292929;
+}
+
+.sub-text4{
+    position: relative;
+    top: 400px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #292929
+}
+
+.sub-text4-1{
+    position: relative;
+    top: 400px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: #292929
+}
+
+.sub-text4-2{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 500; 
+    letter-spacing: 3px;
+    color: #292929
+}
+
+.btn2{
+    position: absolute;
+    top: 650px;
+    right: 0px;
+    font-family: 'Monsterrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #292929;
+    padding: 20px 50px;
+    box-shadow: inset 0 0 0 0 azure;
+    transition: ease-out 0.3s;
+}
+
+.btn2:hover{
+    box-shadow: inset 500px 0 0 0 #292929;
+    color: #FFFFFF;
+}
+
+.banner5{
+    position: relative;
+    top: 850px;
+    left: 70px;
+    background-image: url(https://images.unsplash.com/photo-1547570456-0e4070952418?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    width: 350px;
+    height: 370px;
+}
+
+.text5{
+    position: relative;
+    top: -125px;
+    left: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #292929;
+}
+
+.sub-text5{
+    position: relative;
+    top: -70px;
+    left: 400px;
+    width: 500px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #292929
+}
+
+.sub-text5-1{
+    position: relative;
+    top: -70px;
+    left: 400px;
+    width: 650px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #292929
+}
+
+.sub-text5-2{
+    position: relative;
+    top: 110px;
+    left: 400px;
+    width: 600px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: right;
+    color: #292929
+}
+
+.sub-text5-3{
+    font-weight: 500;
+}
+
+.banner6{
+    position: relative;
+    top: 950px;
+    left: 70px;
+    background-image: url(https://images.unsplash.com/photo-1616789012569-577e5e59d1b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 370px;
+}
+
+.text6{
+    position: relative;
+    top: 0;
+    left: 400px;
+    width: 500px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #292929;
+}
+
+.sub-text6{
+    position: relative;
+    top: 0;
+    left: 400px;
+    width: 650px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #292929
+}
+
+.sub-text6-1{
+    position: relative;
+    top: 170px;
+    left: 400px;
+    width: 600px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: right;
+    color: #292929
+}
+
+.sub-text6-2{
+    font-weight: 500;
+}
+
+.banner7{
+    position: relative;
+    top: 1050px;
+    left: 70px;
+    background-image: url(https://images.unsplash.com/photo-1576074436157-6555fe967d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 370px;
+}
+
+.text7{
+    position: relative;
+    top: 0;
+    left: 400px;
+    width: 500px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #292929;
+}
+
+.sub-text7{
+    position: relative;
+    top: 0;
+    left: 400px;
+    width: 650px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #292929
+}
+
+.sub-text7-1{
+    position: relative;
+    top: 210px;
+    left: 400px;
+    width: 600px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: right;
+    color: #292929
+}
+
+.sub-text7-2{
+    font-weight: 500;
+}
+
+.aseries{
+    background-image: url(https://images.unsplash.com/photo-1612450946942-ebaeb7a7f285?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    position: relative;
+    bottom: -1200px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #292929;
+    color: #FFFFFF;
+}
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.socialmedia{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 1rem 0;
+}
+.socialmedia li{
+    margin: 0 20px;
+}
+
+.socialmedia a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.socialmedia a i{
+    font-size: 30px;
+    transition: color 0.2s ease-out;
+}
+
+.socialmedia a:hover i{
+    color:#9B9B9B;
+}
+
+.foot h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.logofoot h2{
+    display: flex;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    letter-spacing: 5px;
+    align-items: center;
+    justify-content: space-around;
+    color: #FFFFFF;
+}
